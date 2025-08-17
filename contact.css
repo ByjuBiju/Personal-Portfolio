@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #081b29;
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    padding: 37px 7%;
+    background: #081b29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a {
+    margin-left: 40px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+.contact {
+    padding: 150px 7% 50px 7%;
+}
+
+.contact h1 {
+    color: #00abf0;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: left;
+}
+
+.left iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 320px;
+    border: 0;
+    padding-bottom: 40px;
+}
+
+.right {
+    min-width: 280px;
+    max-width: 400px;
+    line-height: 2;
+}
+
+.contact-content p {
+    font-size: 18px;
+}
+
+.social-icons {
+    margin-bottom: 40px;
+}
+
+.social-icons a {
+    margin-right: 30px;
+    font-size: 22px;
+    color: gold;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #00abf0;
+}
+.contact-wrapper {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    padding: 30px; 
+    border-radius: 20px;
+    width: 60%; 
+    max-width: 1000px;
+    height: auto; 
+    margin: 0 auto; 
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 5%;
+    height: 100px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .navbar a {
+    margin: 10px 10px 0 0;
+  }
+
+  .contact {
+    padding: 120px 5% 50px 5%;
+  }
+
+  .contact h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .left iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-content p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .social-icons a {
+    margin: 0;
+  }
+
+  .contact-wrapper {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+
+
