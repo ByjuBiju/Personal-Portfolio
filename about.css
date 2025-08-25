@@ -137,6 +137,68 @@ body {
 
 
 
+
+
+
+.certificate-row {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.certificate-row .circle-box img {
+  width: 70px;
+  height: 70px;
+}
+.certificate-row .line-img {
+  width: 300px;
+  height: 100px;
+  margin-top: 20px;
+}
+/* Text Styling */
+.certificate-row .education-text span {
+  color: #40bff2;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.certificate-row .education-text p {
+  color: white;
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 10px 0 0 10px;
+}
+
+/* 🔹 Responsive Fix for ≤768px */
+@media (max-width: 768px) {
+  .certificate-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .certificate-row .circle-box,
+  .certificate-row .line-img {
+    display: none;
+  }
+
+  .certificate-row .education-text span {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  .certificate-row .education-text p {
+    font-size: 15px;
+    margin: 5px 0 0 0;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -311,3 +373,4 @@ body {
 
 
 }
+
